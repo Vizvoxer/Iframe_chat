@@ -35,7 +35,6 @@ function addChatBox() {
 addChat.addEventListener("click", addChatBox);
 
 function listener(event) {
-console.log(event.data);
 var frames = document.querySelectorAll("iframe");
 frames.forEach(function(e){
     e.contentWindow.frames.feedFrame.postMessage(event.data, "*");
