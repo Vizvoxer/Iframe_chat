@@ -1,4 +1,4 @@
-var addChat = document.querySelector(".c-add-chatbox");
+var addChat = document.querySelector(".fa-plus");
 var body = document.querySelector(".l-chat-container");
 var chat = document.querySelector(".c-chatbox");
 var userCount = 0;
