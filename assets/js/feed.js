@@ -1,11 +1,10 @@
 var feed = document.querySelector("div");
 var store = [];
-
 function listener(event) {
-        var date = new Date();
-        var hours = date.getHours();
-        var minutes = date.getMinutes();
-        var seconds = date.getSeconds();
+            var date = new Date();
+        var hours = ('0' + date.getHours()).slice(-2);
+        var minutes = ('0' + date.getMinutes()).slice(-2);
+        var seconds = ('0' + date.getSeconds()).slice(-2);
         var message = event.data;
         if (message) {
             var chatMessage =

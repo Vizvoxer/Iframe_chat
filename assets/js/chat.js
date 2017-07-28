@@ -1,9 +1,7 @@
 var userInput = document.querySelector(".c-chatbox__user-input");
 var sendInput = document.querySelector(".c-chatbox__send-input");
 var chatNumber = 0;
-var userNumber;
 var chatHeader = document.querySelector(".c-chatbox__header");
-
 sendInput.addEventListener("click", function(e) {
     var message = userInput.value;
     e.preventDefault();

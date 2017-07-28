@@ -21,6 +21,7 @@ function addChatBox() {
     wrap.appendChild(wrapTitle);
     wrap.appendChild(newChat);
     body.appendChild(wrap);
+    newChat.contentWindow.postMessage(userCount, "*");
     //after element appears we make it draggable and inform it about its id number
     setTimeout(function(){
         newChat.contentWindow.postMessage(userCount, "*");
